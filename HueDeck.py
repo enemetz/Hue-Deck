@@ -4,7 +4,7 @@ import eel
 # Eel using front end directory
 eel.init('web')
 
-b = Bridge('192.168.1.8')
+b = Bridge('Your Bridge IP')
 # Have to hit button on bridge and then run b.connect only once
 # b.connect()
 b.get_api()
