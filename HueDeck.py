@@ -4,7 +4,7 @@ import eel
 # Eel using front end directory
 eel.init('web')
 
-b = Bridge('192.168.1.8')
+b = Bridge('Your bridge ip')
 # Have to hit button on bridge and then run b.connect only once
 # b.connect()
 b.get_api()
@@ -42,7 +42,7 @@ def lightSwitchFourPressed():
     else:
         b.set_light(4, 'on', True)
 
-
+#is called to check if light is on
 @eel.expose
 def isLightOn(x):
     print("Made it")
